@@ -1,0 +1,42 @@
+#include "Date.hpp"
+
+// Just an array of strings. Access a month using:
+// Date::MONTHS[0] ---> "JANUARY"
+const string Date::MONTHS[] = {
+  "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY",
+  "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER",
+  "NOVEMBER", "DECEMBER"
+};
+
+// Default, just make sure the fields are set to something
+Date::Date() {
+  this->month = 1;
+  this->day = 1;
+  this->year = 1000;
+}
+Date::~Date() {}
+
+// Compare function which is true if lhs is earlier than rhs
+bool Date::compare(Date& lhs, Date& rhs) {
+  // IMPLEMENT
+}
+
+// Sample getter/setter
+int Date::get_month() const {
+  return this->month;
+}
+void Date::set_month(int month) {
+  this->month = month;
+}
+
+// IMPLEMENT OTHER GETTERS AND SETTERS
+i
+nt Date::get_day() const{
+}
+//  * * * *
+//  * * * *
+
+// Returns a well formatted string representation of this Date
+string Date::print() {
+  // IMPLEMENT
+}
